@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Student.create!(first_name: "string", last_name: "string", email: "string", password_digest: "string", phone_number: "string", short_bio: "text" , linkedin_url:"string", twitter_handle:"string", website_url:"string", online_resume_url:"string", github_url:"string", photo:"string")
+Student.create!(first_name: "Joe", last_name: "Shmoe", email: "joe@email.com", password_digest: "password", phone_number: "7777777777", short_bio: "my name is joe" , linkedin_url:"www.joe.com", twitter_handle:"@joe", website_url:"www.joessite.com", online_resume_url:"joeresume.com", github_url:"joehub.com", photo:"joeto.jpg")
 
 Experience.create!(student_id: 1, start_date: 2016, end_date: 2018, job_title: "Rails Developer", company_name: "Actualize Company", details: "This was a job where I did stuff")
 Experience.create!(student_id: 1, start_date: 2019, end_date: 2019, job_title: "Software Developer", company_name: "Another Company", details: "This was a job where I did stuff")

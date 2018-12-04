@@ -1,0 +1,1 @@
+json.partial! "students.json.jbuilder", student: @student
