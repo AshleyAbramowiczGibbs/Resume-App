@@ -22,16 +22,16 @@ Rails.application.routes.draw do
     get '/skills' => 'skills#index'
     post "/skills" => "skills#create"
     get "/skills/:id" => "skills#show"
-    patch "/skills" => "skills#update"
+    patch "/skills/:id" => "skills#update"
     delete "/skills/:id" => "skills#destroy"
 
-    post "/sessions" => "sessions#create"
-
-    get '/capstone' => 'capstones#index'
+    get '/capstones' => 'capstones#index'
     post "/capstone" => "capstones#create"
     get "/capstone/:id" => "capstones#show"
-    patch "/capstone" => "capstones#update"
+    patch "/capstone/:id" => "capstones#update"
     delete "/capstone/:id" => "capstones#destroy"
+
+    post "/sessions" => "sessions#create"
 
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
