@@ -2,7 +2,7 @@ class Api::EducationsController < ApplicationController
 
   def create
     @education = Education.new(
-      student_id: 1,
+      student_id: surrent_user.id,
       start_date: params[:start_date],
       end_date: params[:end_date],
       degree: params[:degree],
