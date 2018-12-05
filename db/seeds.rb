@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Student.create!(first_name: "Joe", last_name: "Shmoe", email: "joe@email.com", password_digest: "password", phone_number: "7777777777", short_bio: "my name is joe" , linkedin_url:"www.joe.com", twitter_handle:"@joe", website_url:"www.joessite.com", online_resume_url:"joeresume.com", github_url:"joehub.com", photo:"joeto.jpg")
+Student.create!(first_name: "Joe", last_name: "Shmoe", email: "joe@email.com", password_digest: "password", phone_number: "7777777777", short_bio: "my name is joe" , linkedin_url:"http://www.joe.com", twitter_handle:"@joe", website_url:"http://www.joessite.com", online_resume_url:"joeresume.com", github_url:"joehub.com", photo:"joeto.jpg")
 
 Experience.create!(student_id: 1, start_date: 2016, end_date: 2018, job_title: "Rails Developer", company_name: "Actualize Company", details: "This was a job where I did stuff")
 Experience.create!(student_id: 1, start_date: 2019, end_date: 2019, job_title: "Software Developer", company_name: "Another Company", details: "This was a job where I did stuff")
@@ -19,7 +19,7 @@ Skill.create!(student_id: 1, skill_name: "dancing")
 Skill.create!(student_id: 1, skill_name: "axios")
 Skill.create!(student_id: 1, skill_name: "running")
 
-Capstone.create!(student_id: 1, name: "Resume-App", description:"app with rails backend and vuejs fontend", url: "www.app.come", screenshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKQOyUcauvGU7AXaQ4csn9qgovudRj8HBclj57nq-DgamOP3EQ")
+Capstone.create!(student_id: 1, name: "Resume-App", description:"app with rails backend and vuejs fontend", url: "http://www.app.come", screenshot: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKQOyUcauvGU7AXaQ4csn9qgovudRj8HBclj57nq-DgamOP3EQ")
 
 
 

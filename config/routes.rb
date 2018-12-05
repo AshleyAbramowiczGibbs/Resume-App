@@ -7,17 +7,17 @@ Rails.application.routes.draw do
     patch "/students/:id" => "students#update"
     delete "/students/:id" => "students#destroy"
 
-    get '/experience' => 'experience#index'
-    post "/experience" => "experience#create"
-    get "/experience/:id" => "experience#show"
-    patch "/experience" => "experience#update"
-    delete "/experience/:id" => "experience#destroy"
+    get '/experiences' => 'experiences#index'
+    post "/experiences" => "experiences#create"
+    get "/experiences/:id" => "experiences#show"
+    patch "/experiences" => "experiences#update"
+    delete "/experiences/:id" => "experiences#destroy"
 
-    get '/education' => 'education#index'
-    post "/education" => "education#create"
-    get "/education/:id" => "education#show"
-    patch "/education" => "education#update"
-    delete "/education/:id" => "education#destroy"
+    get '/education' => 'educations#index'
+    post "/education" => "educations#create"
+    get "/education/:id" => "educations#show"
+    patch "/education" => "educations#update"
+    delete "/education/:id" => "educations#destroy"
 
     get '/skills' => 'skills#index'
     post "/skills" => "skills#create"
@@ -25,13 +25,14 @@ Rails.application.routes.draw do
     patch "/skills" => "skills#update"
     delete "/skills/:id" => "skills#destroy"
 
-    get '/capstone' => 'capstone#index'
-    post "/capstone" => "capstone#create"
-    get "/capstone/:id" => "capstone#show"
-    patch "/capstone" => "capstone#update"
-    delete "/capstone/:id" => "capstone#destroy"
-
     post "/sessions" => "sessions#create"
+
+    get '/capstone' => 'capstones#index'
+    post "/capstone" => "capstones#create"
+    get "/capstone/:id" => "capstones#show"
+    patch "/capstone" => "capstones#update"
+    delete "/capstone/:id" => "capstones#destroy"
+
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
