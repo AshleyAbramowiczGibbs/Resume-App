@@ -27,7 +27,7 @@ class Api::ExperiencesController < ApplicationController
     @experience.details = params["details"] || @experience.details
 
     if @experience.save
-      render json: {message: "Experience created successfully!"}
+      render json: {message: "Experience updated successfully!"}
     else
       render json: {message: @experience.errors.full_messages}, status: 422
     end
@@ -36,7 +36,7 @@ class Api::ExperiencesController < ApplicationController
   def destroy
     @experience = Experience.find_by(id: params[:id])
     if @experience.destroy
-      render json: {message: "User successfully destroyed!"}
+      render json: {message: "Experience successfully destroyed!"}
     else
       render json: {message: @experience.errors.full_messages}, status: 422
     end

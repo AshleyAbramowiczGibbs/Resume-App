@@ -26,7 +26,7 @@ class Api::EducationsController < ApplicationController
     @education.details = params["details"] || @education.details
 
     if @education.save
-      render json: {message: "Education created successfully!"}
+      render json: {message: "Education updated successfully!"}
     else
       render json: {message: @education.errors.full_messages}, status: 422
     end
@@ -35,7 +35,7 @@ class Api::EducationsController < ApplicationController
   def destroy
     @education = Education.find_by(id: params[:id])
     if @education.destroy
-      render json: {message: "User successfully destroyed!"}
+      render json: {message: "Education successfully destroyed!"}
     else
       render json: {message: @education.errors.full_messages}, status: 422
     end
