@@ -1,4 +1,5 @@
 class Api::StudentsController < ApplicationController
+  before_action :authenticate_user, except: [:index, :show, :create]
 
   def index
     @students = Student.all

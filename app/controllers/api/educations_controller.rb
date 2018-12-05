@@ -1,4 +1,5 @@
 class Api::EducationsController < ApplicationController
+  before_action :authenticate_user, except: [:index, :show]
 
   def create
     @education = Education.new(
