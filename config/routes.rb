@@ -30,6 +30,8 @@ Rails.application.routes.draw do
     get "/capstone/:id" => "capstone#show"
     patch "/capstone" => "capstone#update"
     delete "/capstone/:id" => "capstone#destroy"
+
+    post "/sessions" => "sessions#create"
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
